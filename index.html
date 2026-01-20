@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Love You Lila 💕</title>
+    <title>Ich vermisse dich Lila 💕</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="particles" id="particles"></div>
+        <div class="background-shapes" id="bgShapes"></div>
         
         <div class="heart-container">
             <div class="heart"></div>
-            <div class="heart-shadow"></div>
+            <div class="heart-glow"></div>
         </div>
         
-        <div class="message">
-            <h1 class="text-line line-1">I LOVE YOU</h1>
-            <h1 class="text-line line-2">SO SO MUCH</h1>
-            <h1 class="text-line line-3">LILA</h1>
-            <div class="hearts-trail" id="heartsTrail"></div>
+        <div class="message" id="message">
+            <h1 class="text-line main-text" id="mainText">ICH LIEBE DICH</h1>
+            <p class="language-name" id="langName">Deutsch</p>
+            <h2 class="sub-text" id="subText">LILA</h2>
         </div>
         
-        <!-- Click hint -->
-        <div class="click-hint">Click anywhere ✨</div>
+        <div class="click-hint" id="clickHint">
+            <span>Klicke für eine neue Sprache ✨</span>
+            <span class="click-count" id="clickCount">0/6</span>
+        </div>
+        
+        <div class="miss-you-message" id="missMessage">
+            <p>Ich vermisse dich so sehr 💕</p>
+        </div>
     </div>
     
     <script src="main.js"></script>

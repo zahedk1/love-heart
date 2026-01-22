@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ich vermisse dich Lila 💕</title>
+    <title>A Love Story for Lila 💕</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="particles" id="particles"></div>
-        <div class="background-shapes" id="bgShapes"></div>
-        
-        <div class="heart-container">
-            <div class="heart"></div>
-            <div class="heart-glow"></div>
+    <div class="background-gradient" id="bgGradient"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <div class="card-container">
+        <div class="card active" id="card">
+            <div class="card-content">
+                <div class="heart-icon">💕</div>
+                <p class="love-message" id="loveMessage">I love you because you are everything I have ever wished for in a woman.</p>
+                <div class="message-number" id="messageNumber">1 of 15</div>
+            </div>
         </div>
-        
-        <div class="message" id="message">
-            <h1 class="text-line main-text" id="mainText">ICH LIEBE DICH</h1>
-            <p class="language-name" id="langName">Deutsch</p>
-            <h2 class="sub-text" id="subText">LILA</h2>
-        </div>
-        
-        <div class="click-hint" id="clickHint">
-            <span>Klicke für eine neue Sprache ✨</span>
-            <span class="click-count" id="clickCount">0/6</span>
-        </div>
-        
-        <div class="miss-you-message" id="missMessage">
-            <p>Ich vermisse dich so sehr 💕</p>
-        </div>
+    </div>
+    
+    <div class="navigation-hint" id="navHint">
+        <span>Click anywhere to continue</span>
+        <div class="hint-arrow">→</div>
+    </div>
+    
+    <div class="final-message" id="finalMessage">
+        <h1>For Lila</h1>
+        <p>With all my love, forever</p>
+        <p class="signature">from Zahed</p>
     </div>
     
     <script src="main.js"></script>
